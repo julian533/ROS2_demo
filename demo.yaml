@@ -23,6 +23,8 @@ spec:
       nodeSelector:
         role: slave1
       restartPolicy: Always
+      hostNetwork: true
+      dnsPolicy: ClusterFirstWithHostNet
 
 ---
 
@@ -55,6 +57,8 @@ spec:
         operator: Exists
         effect: NoSchedule
       restartPolicy: Always
+      hostNetwork: true
+      dnsPolicy: ClusterFirstWithHostNet
 
 ---
 
@@ -83,3 +87,5 @@ spec:
       nodeSelector:
         role: slave2
       restartPolicy: Always
+      hostNetwork: true
+      dnsPolicy: ClusterFirstWithHostNet
