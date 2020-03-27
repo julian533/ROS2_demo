@@ -57,7 +57,7 @@ spec:
         operator: Exists
         effect: NoSchedule
       restartPolicy: Always
-     # hostNetwork: true
+      hostNetwork: true
       dnsPolicy: ClusterFirstWithHostNet
 
 ---
