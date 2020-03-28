@@ -23,7 +23,7 @@ spec:
       nodeSelector:
         role: slave1
       restartPolicy: Always
-   #   hostNetwork: true
+      hostNetwork: true
       dnsPolicy: ClusterFirstWithHostNet
 
 ---
